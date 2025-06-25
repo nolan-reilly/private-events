@@ -1,24 +1,3 @@
-# README
+# Project Description:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a private event management web application where users can create events and invite others to attend. Users can act as event organizers or attendees. Each event includes details like a name, date, and location. The app models a many-to-many relationship between users and events, allowing users to attend multiple events and each event to have multiple attendees.
