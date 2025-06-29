@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   resources :users, only: [ :show ]
 
   resources :events, only: [ :new, :create ]
+  resources :events do
+    post "attend", to: "attends#create"
+    delete "unattend", to: "attends#destroy"
+  end
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
